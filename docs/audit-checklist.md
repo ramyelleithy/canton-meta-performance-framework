@@ -66,4 +66,4 @@ Run this checklist before launching any new campaign, and again on any campaign 
 
 ---
 
-**See also:** [`docs/experiments.md`](experiments.md) for logging the test this checklist is gating; [`docs/winners.md`](winners.md) and [`docs/failures.md`](failures.md) for the evidence this checklist's benchmarks are drawn from; [`docs/evidence-rules.md`](evidence-rules.md) for how those benchmarks may be changed.
+**See also:** [`docs/experiments.md`](experiments.md) for logging the test this checklist is gating; [`docs/winners.md`](winners.md) and [`docs/failures.md`](failures.md) for the evidence this checklist's benchmarks are drawn from; [`docs/evidence-rules.md`](evidence-rules.md) for how those benchmarks may be changed; [`docs/kpi-thresholds.md`](kpi-thresholds.md) for the specific metric values referenced throughout this checklist.

@@ -4,6 +4,26 @@ All notable changes to the Canton Meta Performance Framework are recorded here. 
 
 Per operating rule: **from v1.0 onward, any change to this framework must be justified by new data (a new audit, a new ad set result, a new Shopify pattern), not by opinion or intuition.** Every changelog entry should be traceable to evidence recorded in `docs/historical-analysis.md`.
 
+## v1.2 — Finalization: KPI thresholds, glossary, roadmap, repository rules
+
+**Summary:** this release completes the documentation layer of the repository. It adds no new historical evidence and does not modify any existing framework decision, benchmark, or conclusion from v1.0 or v1.1 — everything below is additive. As of this version, documentation is complete; the repository is read-only except when updated with new evidence from real experiments (see `docs/repository-rules.md` Rule 10).
+
+**Added:**
+- `docs/kpi-thresholds.md` — Canton's own performance benchmark table (CTR, CPC, CPM, LPV, VC, ATC, IC, Purchase Rate, CPA, ROAS, Frequency), each with Current Historical Benchmark, Current Experiment Benchmark, Target, Decision Rule, and Evidence Source columns. No numbers were invented — every populated cell cites `docs/historical-analysis.md`, `docs/experiments.md`, or `docs/winners.md`; every "Target" cell is left empty, since Canton has not yet run enough controlled experiments to set a forward-looking target with evidence behind it.
+- `docs/glossary.md` — a one-paragraph definition for every term used across the repository (Discovery, Validation, Scaling, Prime, Winner, Failure, Evidence, Experiment, Framework, Playbook, ABO, CBO, Broad, Interest, Lookalike, Creative, LPV, VC, ATC, IC, CPA, ROAS, CTR, Frequency, and all other repository-specific terms), each cross-referenced to its source document.
+- `docs/roadmap.md` — the Meta Ads operational roadmap (not a software roadmap), structured as nine phases: Repository (Completed), Historical Analysis (Completed), Landing Pages (Completed), Benetton Discovery (Pending), Creative Validation (Pending), First Stable Winner (Pending), Scaling (Pending), Second Winning Product (Pending), Prime Framework (Pending). Each phase states its Objective, Success Criteria, and Exit Criteria, and every Pending phase is explicitly tied to the experiment/winner evidence still required to complete it.
+- `docs/repository-rules.md` — the operating constitution: ten rules establishing this repository as the single source of truth, prohibiting opinion-based changes, requiring evidence (historical, experimental, or winner-based) for every framework modification, mandating that every experiment/winner/failure be logged, prohibiting overwriting history (append-only), requiring every version to be recorded here in `CHANGELOG.md`, and formally declaring documentation finished as of this version — focus shifts to execution.
+
+**Updated:**
+- `README.md` — added items 11–14 to "How AI agents must use this repository" (check KPI thresholds before quoting a metric, check the glossary for term definitions, check the roadmap for the active phase, and read `docs/repository-rules.md` first as the constitution), and added all four new files to the repository map.
+- Extended the existing "See also" cross-reference footers in `docs/evidence-rules.md`, `docs/framework.md`, `docs/audit-checklist.md`, and `docs/decision-tree.md` to point forward to `docs/kpi-thresholds.md`, `docs/roadmap.md`, `docs/glossary.md`, and `docs/repository-rules.md` as applicable. No existing content, conclusion, benchmark, or rule in these files was altered — only new outbound references were appended.
+
+**Repository audit performed:** full link validation (zero broken links across all 16 documents), zero orphan documents (every document referenced by at least one other), zero duplicate files, consistent `docs/*.md` naming and Markdown formatting, and consistent bidirectional navigation confirmed. See the audit result recorded at the time of this release.
+
+**Not changed:** every v1.0 and v1.1 framework decision, benchmark, historical conclusion, winner, failure, and experiment entry remains exactly as originally documented.
+
+---
+
 ## v1.1 — Living operating system: experiments, winners, failures, evidence rules
 
 **Summary:** this release extends the framework into a running operating system, not just a static reference. It does not modify any existing framework decision or historical conclusion from v1.0 — everything below is additive.

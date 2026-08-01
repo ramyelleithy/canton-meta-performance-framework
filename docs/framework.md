@@ -62,4 +62,4 @@ See [`docs/decision-tree.md`](decision-tree.md) for what to do when a specific m
 
 ---
 
-**See also:** every promotion/scaling/kill decision made under this lifecycle should be logged as a dated entry in [`docs/experiments.md`](experiments.md); confirmed winners belong in [`docs/winners.md`](winners.md) and confirmed failures in [`docs/failures.md`](failures.md). Any change to the rules above requires evidence per [`docs/evidence-rules.md`](evidence-rules.md).
+**See also:** every promotion/scaling/kill decision made under this lifecycle should be logged as a dated entry in [`docs/experiments.md`](experiments.md); confirmed winners belong in [`docs/winners.md`](winners.md) and confirmed failures in [`docs/failures.md`](failures.md). Any change to the rules above requires evidence per [`docs/evidence-rules.md`](evidence-rules.md). See [`docs/roadmap.md`](roadmap.md) for how these stages map onto Canton's current execution phases, and [`docs/glossary.md`](glossary.md) for term definitions.

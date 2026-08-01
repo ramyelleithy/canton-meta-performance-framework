@@ -49,3 +49,8 @@ Any edit to a framework document that changes a rule, a benchmark, a threshold, 
 - Reading [`docs/decision-tree.md`](decision-tree.md) to diagnose a live problem is not a "framework change" and doesn't require new evidence — it's using the existing evidence.
 - Proposing a *new* rule (e.g., a new CTR floor, a new placement default, a new audience strategy) *is* a framework change and needs a citation under Rule 7 before it gets written into [`docs/framework.md`](framework.md), [`docs/campaign-structure.md`](campaign-structure.md), [`docs/creative-framework.md`](creative-framework.md), or [`docs/landing-page-framework.md`](landing-page-framework.md).
 - When in doubt whether something counts as evidence, ask: "could I point to a specific ad set, a specific date, and a specific number?" If not, it's an opinion, however reasonable it sounds.
+
+
+---
+
+**See also:** [`docs/repository-rules.md`](repository-rules.md) — the operating constitution these evidence rules sit under; [`docs/kpi-thresholds.md`](kpi-thresholds.md) for where evidence-backed benchmark values are recorded once they exist.

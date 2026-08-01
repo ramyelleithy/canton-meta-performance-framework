@@ -27,6 +27,10 @@ Canton has run three ad accounts (Canton 1, Canton 2, Canton 3) across multiple 
 8. **Before proposing any change to a framework rule**, read [`docs/evidence-rules.md`](docs/evidence-rules.md) first. It is the constitutional document — it defines what counts as evidence and requires every strategic change to cite [`docs/historical-analysis.md`](docs/historical-analysis.md), [`docs/experiments.md`](docs/experiments.md), or [`docs/winners.md`](docs/winners.md).
 9. **When launching or tracking a test**, log it in [`docs/experiments.md`](docs/experiments.md) from day one, using its exact template. Don't wait for the result to write it down.
 10. **When a test clears Validation with clear evidence**, add it to [`docs/winners.md`](docs/winners.md). When a test fails — commercially or methodologically — add it to [`docs/failures.md`](docs/failures.md). Both are treated as first-class evidence, not as a record to be cleaned up later.
+11. **Before quoting a metric threshold**, check [`docs/kpi-thresholds.md`](docs/kpi-thresholds.md). If a benchmark cell is empty there, treat that metric as undefined for Canton — do not substitute a generic industry number.
+12. **If a term's meaning is unclear**, check [`docs/glossary.md`](docs/glossary.md) before guessing at a definition.
+13. **Before starting new work**, check [`docs/roadmap.md`](docs/roadmap.md) to see which phase is currently active and what its exit criteria are.
+14. **Read [`docs/repository-rules.md`](docs/repository-rules.md) first, before anything else in this repository.** It is the operating constitution — as of v1.2, documentation is complete and this repository is read-only except when updated with new evidence from real experiments (Rule 10). Every future change must satisfy Rules 1–9.
 
 ## Repository map
 
@@ -44,6 +48,10 @@ Canton has run three ad accounts (Canton 1, Canton 2, Canton 3) across multiple 
 | [`docs/winners.md`](docs/winners.md) | Every campaign/ad set that cleared Validation with unambiguous evidence — why it won, what must never change, what's still untested |
 | [`docs/failures.md`](docs/failures.md) | Every failed test — commercial or methodological — with hypothesis, failure reason, evidence, and whether/how it should be retested |
 | [`docs/evidence-rules.md`](docs/evidence-rules.md) | The constitutional document — what counts as evidence, what doesn't, and the citation requirement for every strategic change |
+| [`docs/kpi-thresholds.md`](docs/kpi-thresholds.md) | Canton's own performance benchmarks per metric — historical, experimental, and target values, left empty where evidence is insufficient |
+| [`docs/glossary.md`](docs/glossary.md) | Every term used across this repository, defined once |
+| [`docs/roadmap.md`](docs/roadmap.md) | The Meta Ads operational roadmap — nine phases from repository setup through Prime-stage scaling, each with objective/success/exit criteria |
+| [`docs/repository-rules.md`](docs/repository-rules.md) | The operating constitution — the ten rules governing this repository itself, including that documentation is now complete and execution is the focus |
 | [`CHANGELOG.md`](CHANGELOG.md) | Version history of the framework itself — every entry must trace to new evidence, not opinion |
 
 ## Ground truth accounts

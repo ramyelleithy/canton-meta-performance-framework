@@ -100,4 +100,4 @@ Do not diagnose "audience is wrong" as a first move. None of Canton's documented
 
 ---
 
-**See also:** [`docs/framework.md`](framework.md) for the lifecycle stage a symptom is being diagnosed within; [`docs/audit-checklist.md`](audit-checklist.md) for the pre-launch checks that prevent most of these symptoms; [`docs/playbook.md`](playbook.md) SOP 5 for the kill-or-rebuild procedure that uses this tree; [`docs/failures.md`](failures.md) FAIL-002 for a diagnosed case still open at this tree's Purchase-vs-IC branch.
+**See also:** [`docs/framework.md`](framework.md) for the lifecycle stage a symptom is being diagnosed within; [`docs/audit-checklist.md`](audit-checklist.md) for the pre-launch checks that prevent most of these symptoms; [`docs/playbook.md`](playbook.md) SOP 5 for the kill-or-rebuild procedure that uses this tree; [`docs/failures.md`](failures.md) FAIL-002 for a diagnosed case still open at this tree's Purchase-vs-IC branch; [`docs/kpi-thresholds.md`](kpi-thresholds.md) for the specific benchmark values behind each branch.
