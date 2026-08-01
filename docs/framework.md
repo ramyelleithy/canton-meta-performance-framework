@@ -59,3 +59,7 @@ Every ad set Canton runs sits in exactly one of four lifecycle stages: **Discove
 | Ad set is a proven Prime performer | Protect delivery continuity above all else; no casual edits |
 
 See [`docs/decision-tree.md`](decision-tree.md) for what to do when a specific metric (CTR, LPV, ATC, IC, Purchases) is the problem, independent of lifecycle stage.
+
+---
+
+**See also:** every promotion/scaling/kill decision made under this lifecycle should be logged as a dated entry in [`docs/experiments.md`](experiments.md); confirmed winners belong in [`docs/winners.md`](winners.md) and confirmed failures in [`docs/failures.md`](failures.md). Any change to the rules above requires evidence per [`docs/evidence-rules.md`](evidence-rules.md).

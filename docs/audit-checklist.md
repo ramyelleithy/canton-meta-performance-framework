@@ -63,3 +63,7 @@ Run this checklist before launching any new campaign, and again on any campaign 
 - [ ] Inventory is non-zero for the sizes/colors being advertised — multiple SKUs in the catalog showed 0 inventory on specific variants
 - [ ] SKU prefix matches the product category correctly (`CTN-WM-`, `CTN-KD-`, `CTN-UN-`) for correct reporting/reconciliation
 - [ ] If this product page was built from a `[LP TEST]` draft, confirm the winning version has been merged into the live product and the draft has been cleaned up or clearly marked as superseded
+
+---
+
+**See also:** [`docs/experiments.md`](experiments.md) for logging the test this checklist is gating; [`docs/winners.md`](winners.md) and [`docs/failures.md`](failures.md) for the evidence this checklist's benchmarks are drawn from; [`docs/evidence-rules.md`](evidence-rules.md) for how those benchmarks may be changed.

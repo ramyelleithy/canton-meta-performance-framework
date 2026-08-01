@@ -44,3 +44,7 @@ Both of ولاد's ad texts opened with the offer, not the product: "3 قطع ب
 3. **Match copy to the buyer, not just the product category.** Before writing kids'-product copy, confirm from Shopify's product data whether the buyer is likely the parent (as with ولاد) — if so, write sizing and value language a parent would search for.
 4. **Track CTR against the 7% floor and frequency against the ~2.0 watch threshold daily**, not as a lifetime average, so fatigue or a weak hook is caught while there's still budget to react.
 5. **Don't judge a creative that hasn't cleared Discovery-stage spend** (see [`docs/framework.md`](framework.md)) — a single day or a single sale (as with Canton 3's current Tunic test, one EGP5.89 purchase so far) is not evidence of anything yet.
+
+---
+
+**See also:** [`docs/winners.md`](winners.md) for the full winner entries these creative principles are drawn from; [`docs/failures.md`](failures.md) FAIL-001 for the uncontrolled image-vs-video test and why it doesn't count as evidence either way; [`docs/experiments.md`](experiments.md) for logging any new creative test.

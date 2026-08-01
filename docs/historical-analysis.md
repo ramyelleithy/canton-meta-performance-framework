@@ -79,3 +79,7 @@ Confirmed directly from canton-eg.com's product catalog:
 - **The 15-day dark period (Mar 8–22) cause is undocumented.** Whether this was a deliberate pause, a budget exhaustion event, or a CBO reallocation to a sibling ad set is not recorded — activity-log access was unavailable at time of audit (Meta API returned "this tool is being gradually rolled out" for this account). If activity-log access becomes available, re-audit this gap specifically.
 - **The checkout-completion gap (78% of Initiated Checkouts never became Purchases) has no root-cause data yet.** This is Canton's single biggest documented inefficiency and it currently has zero supporting diagnostic data (no comments data, no checkout-form analytics, no COD-confirmation-call data was available at time of audit). This should be the top investigation priority the next time this repository is updated.
 - **Comments/engagement data has never been pulled.** No positive/negative/objection sentiment data exists in this repository for any ad set — flagged as NOT AVAILABLE in the ولاد forensic audit and never subsequently retrieved.
+
+---
+
+**See also:** [`docs/experiments.md`](experiments.md) for the day-by-day experiment log this analysis is drawn from; [`docs/winners.md`](winners.md) and [`docs/failures.md`](failures.md) for the account's confirmed winners and failures in their standardized templates; [`docs/evidence-rules.md`](evidence-rules.md) for what qualifies as evidence in the first place.

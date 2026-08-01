@@ -71,3 +71,7 @@ Shopify's actual SKU/tag taxonomy should drive campaign-to-product mapping direc
 - `V1` is the first structural version of a campaign. A new version number is warranted when the **audience, objective, or budget structure (ABO/CBO)** changes — not for routine creative refreshes, which live inside the ad set as new ads.
 - A `- Copy` suffix (as seen on Canton 3's Tunic campaign) is the correct mechanism for running a controlled duplicate test — same structure, isolated as its own ad set so its performance can be measured independently rather than blended into the original.
 - Campaign lifecycle should mirror the four stages in [`docs/framework.md`](framework.md) (Discovery → Validation → Scaling → Prime). A campaign's status (ACTIVE/PAUSED) and its lifecycle stage are two different things — ولاد's own campaign ("Pants") shows `effective_status: PAUSED` today, but during Mar 2–7 it was clearly in Validation/early Scaling by performance, regardless of what its status flag says months later. Track lifecycle stage explicitly; don't infer it from status alone.
+
+---
+
+**See also:** [`docs/winners.md`](winners.md) for the structural details (budget, ABO/CBO) of confirmed winners; [`docs/experiments.md`](experiments.md) for logging any new campaign structure test; [`docs/evidence-rules.md`](evidence-rules.md) for the evidence bar a structural rule change must clear.

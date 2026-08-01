@@ -24,6 +24,9 @@ Canton has run three ad accounts (Canton 1, Canton 2, Canton 3) across multiple 
 5. **Before citing a "winning" pattern**, check [`docs/historical-analysis.md`](docs/historical-analysis.md). It is the evidence ledger. If a claim about "what works for Canton" isn't in there, it needs to be verified against the ad account before it's treated as fact.
 6. **Before shipping any new campaign, ad set, or ad**, run it through [`docs/audit-checklist.md`](docs/audit-checklist.md). Every box must be answered, not skipped.
 7. **For step-by-step execution** (launching a Discovery test, scaling a winner, auditing a stalled campaign), use [`docs/playbook.md`](docs/playbook.md) — it is the action layer that sits on top of the framework.
+8. **Before proposing any change to a framework rule**, read [`docs/evidence-rules.md`](docs/evidence-rules.md) first. It is the constitutional document — it defines what counts as evidence and requires every strategic change to cite [`docs/historical-analysis.md`](docs/historical-analysis.md), [`docs/experiments.md`](docs/experiments.md), or [`docs/winners.md`](docs/winners.md).
+9. **When launching or tracking a test**, log it in [`docs/experiments.md`](docs/experiments.md) from day one, using its exact template. Don't wait for the result to write it down.
+10. **When a test clears Validation with clear evidence**, add it to [`docs/winners.md`](docs/winners.md). When a test fails — commercially or methodologically — add it to [`docs/failures.md`](docs/failures.md). Both are treated as first-class evidence, not as a record to be cleaned up later.
 
 ## Repository map
 
@@ -37,6 +40,10 @@ Canton has run three ad accounts (Canton 1, Canton 2, Canton 3) across multiple 
 | [`docs/historical-analysis.md`](docs/historical-analysis.md) | The evidence ledger — every documented winning/losing pattern from Canton 1 and Canton 3, with numbers |
 | [`docs/audit-checklist.md`](docs/audit-checklist.md) | Full pre-launch and in-flight audit checklist across campaign/adset/ad/landing/creative/tracking/pixel/offer/Shopify |
 | [`docs/playbook.md`](docs/playbook.md) | Step-by-step SOPs: launch a Discovery test, scale a winner, run a weekly audit, kill a loser |
+| [`docs/experiments.md`](docs/experiments.md) | The experiment log — every controlled test, logged from launch to result, using a fixed template |
+| [`docs/winners.md`](docs/winners.md) | Every campaign/ad set that cleared Validation with unambiguous evidence — why it won, what must never change, what's still untested |
+| [`docs/failures.md`](docs/failures.md) | Every failed test — commercial or methodological — with hypothesis, failure reason, evidence, and whether/how it should be retested |
+| [`docs/evidence-rules.md`](docs/evidence-rules.md) | The constitutional document — what counts as evidence, what doesn't, and the citation requirement for every strategic change |
 | [`CHANGELOG.md`](CHANGELOG.md) | Version history of the framework itself — every entry must trace to new evidence, not opinion |
 
 ## Ground truth accounts

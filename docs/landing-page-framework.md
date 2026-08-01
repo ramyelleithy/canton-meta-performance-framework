@@ -65,4 +65,4 @@ This is a real, evidenced-based workflow already present in the store, not an in
 
 ---
 
-**See also:** [`docs/historical-analysis.md`](historical-analysis.md) for the raw Shopify catalog evidence this file is built from; [`docs/creative-framework.md`](creative-framework.md) for how ad copy should mirror this page structure (message match); [`docs/audit-checklist.md`](audit-checklist.md) Landing section and [`docs/playbook.md`](playbook.md) SOP 6 for applying this in practice.
+**See also:** [`docs/historical-analysis.md`](historical-analysis.md) for the raw Shopify catalog evidence this file is built from; [`docs/creative-framework.md`](creative-framework.md) for how ad copy should mirror this page structure (message match); [`docs/audit-checklist.md`](audit-checklist.md) Landing section and [`docs/playbook.md`](playbook.md) SOP 6 for applying this in practice; [`docs/failures.md`](failures.md) FAIL-002 for the open checkout-completion question this page structure alone hasn't resolved.

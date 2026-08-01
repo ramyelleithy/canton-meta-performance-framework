@@ -62,3 +62,7 @@ Follow Canton's own existing, evidenced workflow exactly — see [`docs/landing-
 4. Preview/test the draft (direct link, or promote to `ACTIVE` under its own handle for a real split test).
 5. If the test wins, apply the changes to the live product directly and remove or clearly retire the draft — don't leave two live listings for the same product.
 6. Log the result in [`docs/historical-analysis.md`](historical-analysis.md) regardless of outcome — a losing test is still evidence.
+
+---
+
+**See also:** every SOP above produces evidence — log the test in [`docs/experiments.md`](experiments.md) when you launch it, move it to [`docs/winners.md`](winners.md) or [`docs/failures.md`](failures.md) once it resolves, and check [`docs/evidence-rules.md`](evidence-rules.md) before treating any result as grounds for a framework change.
