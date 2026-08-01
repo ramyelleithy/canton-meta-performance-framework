@@ -97,3 +97,7 @@ This is the diagnostic path for any underperforming ad set. Walk it top to botto
 ## Anti-pattern to avoid
 
 Do not diagnose "audience is wrong" as a first move. None of Canton's documented winners used narrow interest/behavior targeting — ولاد ran on fully broad Advantage+ targeting (age 21–65, no interests, no lookalikes, Advantage Audience on) and still converged tightly on a specific buyer (Female, 35–44, Cairo/Giza, night hours) purely through delivery optimization. If a broad ad set isn't converging the way ولاد did, the more likely culprits are creative and offer clarity, not "we need better targeting."
+
+---
+
+**See also:** [`docs/framework.md`](framework.md) for the lifecycle stage a symptom is being diagnosed within; [`docs/audit-checklist.md`](audit-checklist.md) for the pre-launch checks that prevent most of these symptoms; [`docs/playbook.md`](playbook.md) SOP 5 for the kill-or-rebuild procedure that uses this tree.

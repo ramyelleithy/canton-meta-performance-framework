@@ -62,3 +62,7 @@ Canton's Shopify catalog contains a direct, reusable A/B testing pattern already
 5. Once a version wins, apply the winning changes to the live product directly — don't leave two parallel live listings for the same product, which would split reviews, inventory tracking, and ad attribution.
 
 This is a real, evidenced-based workflow already present in the store, not an invented recommendation — three `[LP TEST]` draft duplicates existed in the catalog at the time of this audit (Tunic, Boho set, Benetton dress), all created the same day, confirming this is an active, repeatable practice, not a one-off.
+
+---
+
+**See also:** [`docs/historical-analysis.md`](historical-analysis.md) for the raw Shopify catalog evidence this file is built from; [`docs/creative-framework.md`](creative-framework.md) for how ad copy should mirror this page structure (message match); [`docs/audit-checklist.md`](audit-checklist.md) Landing section and [`docs/playbook.md`](playbook.md) SOP 6 for applying this in practice.

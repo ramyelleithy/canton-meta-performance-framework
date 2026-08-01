@@ -1,18 +1,18 @@
 # Audit Checklist
 
-Run this checklist before launching any new campaign, and again on any campaign that has been live for at least 2–3 days of real spend. Every item must be explicitly answered (yes/no/N/A with a reason) — do not skip items silently. Where an item references a benchmark, the benchmark is sourced from `docs/historical-analysis.md`.
+Run this checklist before launching any new campaign, and again on any campaign that has been live for at least 2–3 days of real spend. Every item must be explicitly answered (yes/no/N/A with a reason) — do not skip items silently. Where an item references a benchmark, the benchmark is sourced from [`docs/historical-analysis.md`](historical-analysis.md).
 
 ## Campaign
 
-- [ ] Name follows the convention: `Canton | {Product} | {ABO/CBO} | {Objective} | {Country} | {Version}` (see `docs/campaign-structure.md`)
+- [ ] Name follows the convention: `Canton | {Product} | {ABO/CBO} | {Objective} | {Country} | {Version}` (see [`docs/campaign-structure.md`](campaign-structure.md))
 - [ ] Objective is OUTCOME_SALES / Purchase-optimized, matching Canton's proven objective on both ولاد and the current Canton 3 Tunic campaign
-- [ ] Budget structure (ABO vs CBO) matches the lifecycle stage: ABO for Discovery, CBO only once ad sets have independently cleared Validation (per `docs/framework.md`)
+- [ ] Budget structure (ABO vs CBO) matches the lifecycle stage: ABO for Discovery, CBO only once ad sets have independently cleared Validation (per [`docs/framework.md`](framework.md))
 - [ ] Daily budget is at or above the EGP250–300/day floor established by Canton 1 ("Pants," EGP250 CBO) and Canton 3 (EGP300 ABO) — below this floor, Discovery-stage learning will be too slow to read
 - [ ] Country targeting confirmed (EG, unless a deliberate new-market test)
 
 ## Ad Set
 
-- [ ] Ad set name is segment-descriptive (who/what it tests), not a generic label like "New Sales Ad Set" (Canton 1's documented naming failure — see `docs/campaign-structure.md`)
+- [ ] Ad set name is segment-descriptive (who/what it tests), not a generic label like "New Sales Ad Set" (Canton 1's documented naming failure — see [`docs/campaign-structure.md`](campaign-structure.md))
 - [ ] Targeting is broad by default (Advantage+ Audience on, no interests/behaviors/lookalikes) unless there is a specific, stated reason to narrow — ولاד's only documented full-forensic winner ran fully broad
 - [ ] Placements are Advantage+ (automatic) unless a specific placement test is underway — Feed drove 90.6% of ولاد's spend and its best ROAS; don't manually restrict placements without a reason
 - [ ] Attribution setting recorded and consistent with prior ad sets in this account (ولاد used 1d_view_7d_click_1d_ev)

@@ -58,7 +58,7 @@ As of this writing, Canton 3 runs a single campaign: `Canton | Tunic | ABO | Pur
 | Canton \| Tunic \| ABO \| Purchase \| EG \| V1 - Copy | ACTIVE | EGP136.01 | 1 | EGP5.89 | 4.33x |
 | Canton \| Tunic \| ABO \| Purchase \| EG \| V1 | PAUSED | EGP77.80 | 0 | — | — |
 
-**Reading this correctly:** this is Discovery-stage data — one purchase at EGP5.89 revenue is not a signal (the revenue figure itself is implausibly low relative to the product's EGP499 price point, which likely means this was a low-value add-on or partial-order capture, not the full tunic order — verify against Shopify order data before drawing any conclusion). Per `docs/framework.md`, this ad set has not yet earned an evaluation of "working" or "not working." Track it forward; don't act on it yet.
+**Reading this correctly:** this is Discovery-stage data — one purchase at EGP5.89 revenue is not a signal (the revenue figure itself is implausibly low relative to the product's EGP499 price point, which likely means this was a low-value add-on or partial-order capture, not the full tunic order — verify against Shopify order data before drawing any conclusion). Per [`docs/framework.md`](framework.md), this ad set has not yet earned an evaluation of "working" or "not working." Track it forward; don't act on it yet.
 
 **Structural contrast with Canton 1:** Canton 3 uses ABO from the start; Canton 1's proven winner (ولاد) lived inside a CBO campaign. This is a real, documented strategic shift — not yet validated against Canton 1's outcome, since no controlled comparison exists. Track whether Canton 3's ABO Discovery approach reaches Validation faster or slower than Canton 1's CBO-driven ولاد did (which took roughly 4 days of real spend to show a clear signal).
 
@@ -69,7 +69,7 @@ Confirmed directly from canton-eg.com's product catalog:
 - **Bundle mechanics dominate the catalog**: `bundle:2-pieces`, `bundle:3-pieces`, and `offer-bxgy` tags appear across the majority of active and recently-created products (tunic, Boho set, Benetton dress, and others).
 - **SKU taxonomy**: `CTN-WM-####` (women), `CTN-KD-####` (kids), `CTN-UN-####` (unisex) — consistent prefix system.
 - **Price points cluster tightly**: EGP399–EGP549 across most SKUs reviewed, with the tunic collection at EGP499.
-- **Landing-page testing is an active, repeated practice**: three `[LP TEST]`-prefixed DRAFT product duplicates existed at time of audit (Tunic, Boho set, Benetton dress), all created the same day — confirming a live, repeatable LP-testing workflow (see `docs/landing-page-framework.md` for the procedure).
+- **Landing-page testing is an active, repeated practice**: three `[LP TEST]`-prefixed DRAFT product duplicates existed at time of audit (Tunic, Boho set, Benetton dress), all created the same day — confirming a live, repeatable LP-testing workflow (see [`docs/landing-page-framework.md`](landing-page-framework.md) for the procedure).
 - **Many catalog products sit in DRAFT status with zero inventory** — consistent with a pre-launch/creative-testing phase rather than live selling; do not assume every product in the catalog is currently ad-eligible without checking status and inventory first.
 
 ## Failures & open questions (do not fill these in without new evidence)

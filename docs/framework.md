@@ -58,4 +58,4 @@ Every ad set Canton runs sits in exactly one of four lifecycle stages: **Discove
 | Ad set goes dark (zero spend) for more than a few days | Treat re-activation as a new Discovery test, not a continuation — do not assume it will re-hit its prior efficiency (ولاد evidence: post-pause ROAS was ~5x worse than its peak) |
 | Ad set is a proven Prime performer | Protect delivery continuity above all else; no casual edits |
 
-See `docs/decision-tree.md` for what to do when a specific metric (CTR, LPV, ATC, IC, Purchases) is the problem, independent of lifecycle stage.
+See [`docs/decision-tree.md`](decision-tree.md) for what to do when a specific metric (CTR, LPV, ATC, IC, Purchases) is the problem, independent of lifecycle stage.
