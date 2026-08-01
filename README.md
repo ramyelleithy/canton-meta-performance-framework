@@ -31,6 +31,7 @@ Canton has run three ad accounts (Canton 1, Canton 2, Canton 3) across multiple 
 12. **If a term's meaning is unclear**, check [`docs/glossary.md`](docs/glossary.md) before guessing at a definition.
 13. **Before starting new work**, check [`docs/roadmap.md`](docs/roadmap.md) to see which phase is currently active and what its exit criteria are.
 14. **Read [`docs/repository-rules.md`](docs/repository-rules.md) first, before anything else in this repository.** It is the operating constitution — as of v1.2, documentation is complete and this repository is read-only except when updated with new evidence from real experiments (Rule 10). Every future change must satisfy Rules 1–9.
+15. **Before proposing a new experiment**, check [`docs/hypotheses.md`](docs/hypotheses.md) for whether it's already tracked, and [`docs/experiments-roadmap.md`](docs/experiments-roadmap.md) for where it sits in priority order. Per [`docs/evidence-rules.md`](docs/evidence-rules.md) Rule 8, historical replication (EXP-003) must run and be evaluated before any isolated-variable experiment after it.
 
 ## Repository map
 
@@ -52,6 +53,8 @@ Canton has run three ad accounts (Canton 1, Canton 2, Canton 3) across multiple 
 | [`docs/glossary.md`](docs/glossary.md) | Every term used across this repository, defined once |
 | [`docs/roadmap.md`](docs/roadmap.md) | The Meta Ads operational roadmap — nine phases from repository setup through Prime-stage scaling, each with objective/success/exit criteria |
 | [`docs/repository-rules.md`](docs/repository-rules.md) | The operating constitution — the ten rules governing this repository itself, including that documentation is now complete and execution is the focus |
+| [`docs/hypotheses.md`](docs/hypotheses.md) | Every testable claim the framework currently holds — ID, hypothesis, historical confidence, status, evidence, and next experiment |
+| [`docs/experiments-roadmap.md`](docs/experiments-roadmap.md) | The prioritized queue of the next controlled tests, EXP-003 (historical replication) through EXP-008, each isolating exactly one variable |
 | [`CHANGELOG.md`](CHANGELOG.md) | Version history of the framework itself — every entry must trace to new evidence, not opinion |
 
 ## Ground truth accounts

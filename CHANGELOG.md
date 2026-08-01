@@ -4,6 +4,25 @@ All notable changes to the Canton Meta Performance Framework are recorded here. 
 
 Per operating rule: **from v1.0 onward, any change to this framework must be justified by new data (a new audit, a new ad set result, a new Shopify pattern), not by opinion or intuition.** Every changelog entry should be traceable to evidence recorded in `docs/historical-analysis.md`.
 
+## v1.3 — Evidence update: Historical Pattern Discovery
+
+**Summary:** this release is an evidence update, not a rewrite. It incorporates the account-wide Historical Pattern Discovery pass (top 5 campaigns, top 5 ad sets, top 5 ads in Canton 1, compared variable by variable) into the repository. No existing framework decision, lifecycle stage, benchmark, winner, failure, or historical conclusion from v1.0–v1.2 was removed or overwritten — every addition below is either a new appended section or a new document.
+
+**Updated:**
+- `docs/historical-analysis.md` — appended "Historical Pattern Discovery v1": top recurring campaign structure (CBO, 80%), audience (broad + Advantage Audience + no gender restriction, 100%), placements (automatic, 100%), attribution (`1d_view_7d_click_1d_ev`, 100%), optimization (OFFSITE_CONVERSIONS, 100%), creative type (STATUS/Page Post, 100%), creative origin (existing Page Post, 100% confirmed / boosted-vs-dark-ad distinction Unknown), CTA (Unknown, 0/5 determinable), and hook patterns (Unknown/Experimental, contradictory on n=2). Every finding carries its confidence classification and sample size.
+- `docs/framework.md` — appended a new "Historical Evidence (v1.3)" section, separating findings into Confirmed / Likely / Experimental / Unknown Rules. Flags the one direct conflict this pass surfaced: the account's top-5 campaigns are 80% CBO, while Stage 1's existing Discovery guidance defaults to ABO (sourced originally from ولاد alone). The conflict is recorded, not silently resolved — Stages 1–4 and the existing Decision Rules Summary are untouched.
+- `docs/evidence-rules.md` — added Rule 8: **historical replication must always precede optimization.** A winning pattern must be reproduced successfully before it is changed, scaled, or varied. This is why `docs/experiments-roadmap.md` opens with a zero-variable replication test (EXP-003) before any isolated-variable experiment.
+
+**Added:**
+- `docs/hypotheses.md` — the open hypothesis ledger. Ten hypotheses (HYP-001 through HYP-010) covering broad vs. interest targeting, automatic vs. manual placements, existing Page Posts vs. dark ads, images vs. videos, Advantage Audience, attribution model choice, CBO vs. ABO, optimization goal, bundle-first vs. hook-first copy, and CTA choice — each with its historical confidence, current status (Confirmed / Likely / Experimental / Unknown), supporting evidence citation, and named next experiment.
+- `docs/experiments-roadmap.md` — the prioritized experiment queue. EXP-003 (Historical Replication — reproduce the best historical Benetton campaign, zero variables changed) is first and gates everything after it per the new Evidence Rule 8. EXP-004 (Existing Post vs. Dark Ad), EXP-005 (Image vs. Video), EXP-006 (Broad vs. Women 25–44), EXP-007 (Automatic vs. Manual Placements), and EXP-008 (Attribution Comparison) follow in priority order, each isolating exactly one variable — a direct structural fix for the multi-variable test design flaw already documented in `docs/failures.md` FAIL-001.
+
+**Repository audit performed:** full link validation, orphan-document check, duplicate-file check, and cross-reference coverage confirmed across all 20 documents (see audit result recorded at the time of this release).
+
+**Not changed:** every v1.0, v1.1, and v1.2 framework decision, lifecycle stage, benchmark, winner, failure, and experiment entry remains exactly as originally documented. The CBO/ABO conflict surfaced in this release is flagged, not resolved — resolution requires EXP-003 to run first, per the new Rule 8.
+
+---
+
 ## v1.2 — Finalization: KPI thresholds, glossary, roadmap, repository rules
 
 **Summary:** this release completes the documentation layer of the repository. It adds no new historical evidence and does not modify any existing framework decision, benchmark, or conclusion from v1.0 or v1.1 — everything below is additive. As of this version, documentation is complete; the repository is read-only except when updated with new evidence from real experiments (see `docs/repository-rules.md` Rule 10).

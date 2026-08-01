@@ -42,6 +42,10 @@ Any edit to a framework document that changes a rule, a benchmark, a threshold, 
 
 (and, per Rule 3, a logged entry in [`docs/failures.md`](failures.md) also satisfies this requirement.) A pull request, commit, or edit that changes a rule without this citation should be treated as incomplete, not as a legitimate framework update — see [`CHANGELOG.md`](../CHANGELOG.md) for how changes are recorded once they meet this bar.
 
+## 8. Historical replication must always precede optimization.
+
+Before changing a winning framework, it must first be reproduced successfully. A historical pattern — even one classified Confirmed at 100% confidence — is not licensed for further optimization, scaling, or variation until it has been rebuilt from scratch under current conditions and shown to still work. This is why [`docs/experiments-roadmap.md`](experiments-roadmap.md) opens with EXP-003, a pure replication test with zero variables changed, before any of the isolated-variable experiments that follow it. Skipping straight to "improve the winner" without first confirming the winner still reproduces is exactly the kind of confident-sounding shortcut Rule 1 exists to block — replication is not busywork, it is the evidence that the historical finding still holds.
+
 ---
 
 ## How this applies day to day
@@ -53,4 +57,4 @@ Any edit to a framework document that changes a rule, a benchmark, a threshold, 
 
 ---
 
-**See also:** [`docs/repository-rules.md`](repository-rules.md) — the operating constitution these evidence rules sit under; [`docs/kpi-thresholds.md`](kpi-thresholds.md) for where evidence-backed benchmark values are recorded once they exist.
+**See also:** [`docs/repository-rules.md`](repository-rules.md) — the operating constitution these evidence rules sit under; [`docs/kpi-thresholds.md`](kpi-thresholds.md) for where evidence-backed benchmark values are recorded once they exist; [`docs/hypotheses.md`](hypotheses.md) for open hypotheses awaiting the evidence Rule 8 requires; [`docs/experiments-roadmap.md`](experiments-roadmap.md) for the prioritized queue that resolves them, replication-first.

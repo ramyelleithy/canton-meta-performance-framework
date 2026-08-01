@@ -82,4 +82,48 @@ Confirmed directly from canton-eg.com's product catalog:
 
 ---
 
-**See also:** [`docs/experiments.md`](experiments.md) for the day-by-day experiment log this analysis is drawn from; [`docs/winners.md`](winners.md) and [`docs/failures.md`](failures.md) for the account's confirmed winners and failures in their standardized templates; [`docs/evidence-rules.md`](evidence-rules.md) for what qualifies as evidence in the first place.
+## Historical Pattern Discovery v1
+
+This section documents the account's first systematic DNA-discovery pass: the top 5 campaigns, top 5 ad sets, and top 5 ads in Canton 1's full history (`date_preset=maximum`), ranked independently at each level by Purchases → ROAS → CPA → Purchase Value → Spend, compared variable by variable. Full methodology, per-winner data tables, and the complete confidence-classification report are preserved in this repository's session record; this section captures only the findings themselves, with confidence levels, so they can be cited going forward.
+
+Confidence bands used throughout: **Confirmed** (≥80% of the sample), **Likely** (60–79%), **Experimental/Unconfirmed** (<60% or contradictory), **Unknown** (not retrievable from the Meta API at all).
+
+### Top recurring campaign structure
+
+**CBO — Confirmed (80%, 4/5 top campaigns).** Archived \| US Polo \| CBO \| EG, بنطلون, Pants, and فستان all ran Campaign Budget Optimization; only one of the top 5 (`ABO \| Purchase \| Discovery`) used ABO. **This directly conflicts with the existing Discovery-stage default in [`docs/framework.md`](framework.md) and [`docs/campaign-structure.md`](campaign-structure.md), which recommend ABO.** The conflict is recorded here rather than silently resolved — see the Historical Evidence section added to `docs/framework.md` and the reconciliation note in [`docs/hypotheses.md`](hypotheses.md).
+
+### Top recurring audience
+
+**Broad targeting — Confirmed (100%, 5/5 top ad sets).** US Polo \| Winter \| Old, the بنطلون and فستان ad sets, ولاد, and New Sales Ad Set - Apr 2026 (Benetton) all ran with zero interest, lookalike, custom-audience, or retargeting layers. **Advantage Audience ON with full age+gender expansion — Confirmed (100%, 5/5).** **No manual gender restriction — Confirmed (100%, 5/5).** **Country = EG — Confirmed (100%, 5/5).** **Age range 18–65 — Confirmed (80%, 4/5; the fifth, ولاد, used 21–65).** Languages: NOT AVAILABLE FROM META API — no explicit locale targeting was set or returned on any of the 5.
+
+### Top recurring placements
+
+**Automatic (Advantage+) placements — Confirmed (100%, 5/5).** All five top ad sets carried identical `effective_publisher_platforms` (Facebook, Instagram, Audience Network, Messenger, Threads) with no manual placement restriction. Per-placement purchase breakdown is available at this depth only for ولاد (documented above: Feed carried 90.6% of spend at the best ROAS) — not independently re-verified for the other 4 in this pass.
+
+### Top recurring attribution
+
+**`1d_view_7d_click_1d_ev` — Confirmed (100%, 5/5).** Every top-5 ad set, spanning December 2025 through March 2026 and four different product lines, used the identical attribution window. This is the single most uniform variable found anywhere in the account.
+
+### Top recurring optimization
+
+**OFFSITE_CONVERSIONS (Purchase) — Confirmed (100%, 5/5).** No top-5 ad set used Highest Volume, Cost Cap, Bid Cap, or a ROAS-goal (VALUE) optimization.
+
+### Top recurring creative type
+
+**STATUS / existing Page Post — Confirmed (100%, 5/5 top ads).** New Sales Ad (US Polo), New Sales Ad (بنطلون), صور (ولاد), Album (Men & Women Broad), and New Sales Ad - Copy (بنطلون جديد) were all boosted from an existing Page Post (`object_type: STATUS`), not a freshly-built image/video/carousel/collection/dynamic-creative ad unit. No image, video, carousel, collection, or dynamic-creative format cleared the account-wide top-5-ads threshold. **Caveat:** this may partly reflect that Canton runs STATUS-format ads far more often than other formats — frequency-of-use is a confound this pass cannot rule out. The one video-format ad found near winner tier (`DCT \| TS \| 3 Videos`, 38 purchases) fell short of the weakest top-5 ad (50 purchases), but n=1 is not enough to conclude video underperforms — see [`docs/failures.md`](failures.md) FAIL-001, which already documents that video has never been given a fair, isolated test at this account.
+
+### Top recurring creative origin
+
+**Existing Page Post (object_story_id present) — Confirmed (100%, 5/5).** Whether each of these posts was published organically to the Page timeline first ("boosted post") or created directly as an ad-only story is **NOT AVAILABLE FROM META API** — the tool cannot distinguish "existing post reused" from "dark ad with a story ID" from the fields it returns. This sub-distinction is Unknown, even though "Existing Page Post" as a category is Confirmed.
+
+### Top recurring CTA
+
+**Unknown — 0/5 determinable.** No `call_to_action_type` was returned for any of the top-5 ads' creatives. The only CTA value observed anywhere near winner tier was `SHOP_NOW`, on the single video-format ad mentioned above (n=1, not a pattern).
+
+### Top recurring hook patterns
+
+**Insufficient data — Unknown/Experimental.** Full primary-text body was retrievable for only 2 of the top 5 ads (صور/ولاد and Album/Men & Women Broad); the other 3 (US Polo, بنطلون, بنطلون جديد-Copy) returned an empty `body` field — the copy lives on the underlying Page post and is NOT AVAILABLE FROM META API through this tool. Of the 2 with visible text, they **disagree**: ولاد led with a bundle offer ("3 قطع بـ799... اشتري قطعتين وخدي الثالثة هدية"), matching the pattern already documented in [`docs/creative-framework.md`](creative-framework.md); Album led with a pain-point hook ("زهقت من البنطلونات الضيقة") and never mentioned a bundle. n=2 is too small to generalize — do not treat the bundle-first rule as account-wide confirmed; treat it as confirmed only for the product categories it's actually been observed in (kids'/dress category, per ولاد and the Benetton winners in [`docs/winners.md`](winners.md)).
+
+---
+
+**See also:** [`docs/experiments.md`](experiments.md) for the day-by-day experiment log this analysis is drawn from; [`docs/winners.md`](winners.md) and [`docs/failures.md`](failures.md) for the account's confirmed winners and failures in their standardized templates; [`docs/evidence-rules.md`](evidence-rules.md) for what qualifies as evidence in the first place; [`docs/hypotheses.md`](hypotheses.md) for these findings restated as testable hypotheses with next-experiment recommendations.

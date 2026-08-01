@@ -60,6 +60,36 @@ Every ad set Canton runs sits in exactly one of four lifecycle stages: **Discove
 
 See [`docs/decision-tree.md`](decision-tree.md) for what to do when a specific metric (CTR, LPV, ATC, IC, Purchases) is the problem, independent of lifecycle stage.
 
+## Historical Evidence (v1.3)
+
+This section is additive — it does not overwrite Stages 1–4 or the Decision Rules Summary above. It records what the account-wide Historical Pattern Discovery pass (see [`docs/historical-analysis.md`](historical-analysis.md) "Historical Pattern Discovery v1") found when the top 5 campaigns, top 5 ad sets, and top 5 ads were compared directly, independent of any single ad set's story. Where this evidence conflicts with an existing stage rule above, the conflict is stated explicitly, not silently resolved.
+
+**Confirmed Rules** (≥80% of the top-5 sample at the relevant level):
+- Broad targeting — no interest/lookalike/custom-audience/retargeting layers (100%, ad sets)
+- Advantage Audience ON with full age+gender expansion (100%, ad sets)
+- No manual gender restriction (100%, ad sets)
+- Fully automatic (Advantage+) placements (100%, ad sets)
+- OFFSITE_CONVERSIONS optimization goal (100%, ad sets)
+- `1d_view_7d_click_1d_ev` attribution window (100%, ad sets)
+- STATUS / existing Page Post creative format (100%, ads — see frequency-of-use caveat in `docs/historical-analysis.md`)
+- Age range 18–65 as the modal targeting band (80%, ad sets)
+- **CBO campaign structure (80%, campaigns) — this conflicts with Stage 1's current "use ABO during Discovery" guidance.** The framework decision in Stage 1 was made from a single ad set's evidence (ولاد, inside a CBO campaign, but never compared against a broad ABO sample). The new account-wide pull shows 4 of the top 5 campaigns by real purchase performance used CBO. This is not yet resolved into a rule change — per [`docs/evidence-rules.md`](evidence-rules.md), a framework change needs a citation, and per the new Rule 8 (historical replication must precede optimization), the next step is EXP-003 in [`docs/experiments-roadmap.md`](experiments-roadmap.md), not an immediate rewrite of Stage 1.
+
+**Likely Rules** (60–79%):
+- None identified at this confidence band — every variable checked in this pass resolved to either Confirmed or fell to Unknown/Experimental for lack of data.
+
+**Experimental Rules** (<60% or contradictory evidence):
+- Bundle-first vs. hook-first ad copy — contradicts itself on the only 2 data points with visible body text (ولاد used bundle-first; Album used a pain-point hook, no bundle)
+- Image vs. Video as a deliberately isolated comparison — no fair historical test exists account-wide (see `docs/failures.md` FAIL-001)
+- Dark-ad-style creative (built from image_hash/video_id directly) vs. reused Page Post — never tested at comparable spend
+
+**Unknown Rules** (not retrievable from the Meta API):
+- Pixel / dataset / event identity for every top-5 ad set
+- CTA value for every top-5 ad
+- Whether winning Page Posts were organically boosted or created ad-only
+- Video length and image/video count patterns (sample too small or field not exposed)
+- Languages targeting
+
 ---
 
-**See also:** every promotion/scaling/kill decision made under this lifecycle should be logged as a dated entry in [`docs/experiments.md`](experiments.md); confirmed winners belong in [`docs/winners.md`](winners.md) and confirmed failures in [`docs/failures.md`](failures.md). Any change to the rules above requires evidence per [`docs/evidence-rules.md`](evidence-rules.md). See [`docs/roadmap.md`](roadmap.md) for how these stages map onto Canton's current execution phases, and [`docs/glossary.md`](glossary.md) for term definitions.
+**See also:** every promotion/scaling/kill decision made under this lifecycle should be logged as a dated entry in [`docs/experiments.md`](experiments.md); confirmed winners belong in [`docs/winners.md`](winners.md) and confirmed failures in [`docs/failures.md`](failures.md). Any change to the rules above requires evidence per [`docs/evidence-rules.md`](evidence-rules.md). See [`docs/roadmap.md`](roadmap.md) for how these stages map onto Canton's current execution phases, [`docs/glossary.md`](glossary.md) for term definitions, [`docs/hypotheses.md`](hypotheses.md) for these findings as testable hypotheses, and [`docs/experiments-roadmap.md`](experiments-roadmap.md) for the prioritized experiment queue that resolves them — starting with EXP-003, a pure historical-replication test.
