@@ -46,6 +46,10 @@ Any edit to a framework document that changes a rule, a benchmark, a threshold, 
 
 Before changing a winning framework, it must first be reproduced successfully. A historical pattern — even one classified Confirmed at 100% confidence — is not licensed for further optimization, scaling, or variation until it has been rebuilt from scratch under current conditions and shown to still work. This is why [`docs/experiments-roadmap.md`](experiments-roadmap.md) opens with EXP-003, a pure replication test with zero variables changed, before any of the isolated-variable experiments that follow it. Skipping straight to "improve the winner" without first confirming the winner still reproduces is exactly the kind of confident-sounding shortcut Rule 1 exists to block — replication is not busywork, it is the evidence that the historical finding still holds.
 
+## 9. Pre-launch execution corrections are not experimental changes.
+
+An experiment's data collection begins at first delivery — the first impression, click, or spend against it — not at the moment its objects (campaign/ad set/ads) are created in Ads Manager. If an execution defect (an ad built the wrong way, a wrong targeting value, a missing setting) is found and fixed **before any delivery has occurred**, that correction restores the experiment to its originally approved design; it does not create a new experiment, does not require a new experiment ID, and does not need to be logged as a variable change. Only a change made **after delivery has begun** counts as an experimental modification requiring a new entry or a new experiment ID. This distinction was established on 2026-08-02 for EXP-003 ([`docs/experiments.md`](experiments.md)), where four ads were found using Media-Library-built creative instead of the required Existing Posts during the final pre-launch audit, corrected before the campaign had generated any impressions, clicks, spend, or purchases, and logged as a Pre-launch Execution Correction rather than a new experiment.
+
 ---
 
 ## How this applies day to day

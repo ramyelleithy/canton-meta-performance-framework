@@ -4,6 +4,18 @@ All notable changes to the Canton Meta Performance Framework are recorded here. 
 
 Per operating rule: **from v1.0 onward, any change to this framework must be justified by new data (a new audit, a new ad set result, a new Shopify pattern), not by opinion or intuition.** Every changelog entry should be traceable to evidence recorded in `docs/historical-analysis.md`.
 
+## v1.5 — EXP-003 launched; new rule: pre-launch execution corrections
+
+**Summary:** logs the first real experiment entry against Evidence Rule 8 (EXP-003, Historical Replication, launched 2026-08-02) and adds a new procedural rule distinguishing pre-launch execution fixes from experimental modifications. No existing framework decision, benchmark, winner, failure, or historical conclusion from v1.0–v1.4 was removed or overwritten.
+
+**Added:**
+- `docs/experiments.md` — EXP-003 logged for the first time: campaign `120248774207400716`, ad set `120248774244270716`, replicating the "Dress Benetton" winner (`docs/winners.md` Winner 2). Status PENDING (live, no delivery data yet as of this entry). Includes a "Pre-launch Execution Correction" note: four ads were found built from Media-Library creative during the final pre-launch audit (violating the Existing-Posts-only design) and corrected before the campaign generated any delivery data.
+- `docs/evidence-rules.md` — added Rule 9: **pre-launch execution corrections are not experimental changes.** A defect found and fixed before first delivery restores the approved design rather than creating a new experiment; only changes made after delivery has begun count as experimental modifications.
+
+**Not changed:** EXP-003's ID, hypothesis, and design remain exactly as originally defined in `docs/experiments-roadmap.md`. No new experiment was created; the roadmap was not incremented.
+
+---
+
 ## v1.4 — Evidence update: Website-only destination
 
 **Summary:** this release is a small, targeted evidence update, not a rewrite. It closes an open question prompted by a Page-level "Browser add-ons → WhatsApp" setting observed in Canton's Facebook Page settings (2026-08-02): whether historical winning campaigns drove to the website, WhatsApp, or both. No existing framework decision, lifecycle stage, benchmark, winner, failure, or historical conclusion from v1.0–v1.3 was removed or overwritten.

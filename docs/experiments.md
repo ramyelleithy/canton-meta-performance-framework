@@ -100,4 +100,34 @@ Per [`docs/evidence-rules.md`](evidence-rules.md): this file, together with [`do
 
 ---
 
+## EXP-003
+
+- **Experiment ID:** EXP-003
+- **Date:** 2026-08-02 (start)
+- **Product:** Benetton dress/set (`canton-eg.com/products/benetton-premium-cotton-dress-girls`)
+- **Campaign:** Canton | Benetton | Historical Replication | CBO | V1 (`120248774207400716`), CBO, EGP600.00/day, Highest Volume bid strategy
+- **Ad Set:** Historical Replication (`120248774244270716`) — broad targeting age 18–65, EG (home+recent), Advantage Audience ON, automatic (Advantage+) placements, `OFFSITE_CONVERSIONS` optimization
+- **Creative:** Four ads, all sourced from Existing Posts on Page `1781350502173727` (verified `object_story_id` present on every ad — see Pre-launch Execution Correction below)
+- **Hypothesis:** Reproducing the best historical Benetton campaign (source winner: "Dress Benetton," ad set `120241892188310716`, ROAS 14.28x, 59 purchases, EGP3,312.44 spend — [`docs/winners.md`](winners.md) Winner 2) with zero variables changed will reproduce comparable results under current conditions.
+- **What changed:** None — this is a pure replication, per [`docs/experiments-roadmap.md`](experiments-roadmap.md) EXP-003 definition.
+- **What stayed constant:** Campaign structure (CBO), budget (EGP300/day matched at ad-set intent, EGP600/day at campaign level per this build), targeting, placements, optimization goal, attribution, destination (website only — see [`docs/historical-analysis.md`](historical-analysis.md) "Top recurring destination"), and creative origin (Existing Posts, not dark-built).
+- **Budget:** EGP600.00/day (CBO, campaign level)
+- **Duration:** PENDING — live as of 2026-08-02, no completed duration yet
+- **Spend:** PENDING — no delivery data returned yet at time of this log entry (checked via account pull, `date_preset=maximum`, 2026-08-02)
+- **CTR:** PENDING
+- **CPC:** PENDING
+- **CPM:** PENDING
+- **LPV:** PENDING
+- **VC:** PENDING
+- **ATC:** PENDING
+- **IC:** PENDING
+- **Purchases:** PENDING
+- **CPA:** PENDING
+- **ROAS:** PENDING
+- **Decision:** PENDING — too early to judge. Per the decision rule in [`docs/experiments-roadmap.md`](experiments-roadmap.md): compare CPA/ROAS trend against the original's Mar 27–onward trajectory once data exists. If it reproduces within a reasonable range, EXP-006 (CBO vs. ABO) becomes valid to run next. If it does not reproduce, every "Confirmed" finding in [`docs/hypotheses.md`](hypotheses.md) is provisionally downgraded until the drift is understood.
+- **Next Action:** Let the campaign run and accumulate data; re-audit CPA/ROAS against the source winner once a meaningful sample exists; do not launch EXP-004 through EXP-008 until this entry has a Decision, per Evidence Rule 8.
+- **Lessons Learned — Pre-launch Execution Correction:** During the final pre-launch audit (2026-08-02, before this campaign had generated any impressions, clicks, spend, or purchases), the ad set was found holding four ads built with fresh creative (Media Library / uploaded media) instead of Existing Posts, violating this experiment's own design requirement ("creative: the same... winning STATUS/Page-Post ads... reused as-is, not rebuilt"). The advertiser corrected this directly in Ads Manager before the campaign began delivering — all four ads were replaced with Existing-Post creatives (verified `object_story_id` present on every ad, re-pulled from Meta on 2026-08-02). Since the campaign had not yet generated any delivery data at the time of the correction, this is logged as a **Pre-launch Execution Correction**, not an experimental modification — EXP-003's design, hypothesis, and ID are unchanged. See [`docs/evidence-rules.md`](evidence-rules.md) Rule 9 for the general principle this follows.
+
+---
+
 *Add new experiments below this line, oldest first, using the template above. Do not delete or overwrite a prior entry's original data when updating it — append updates with a dated note if the test's status changes materially after this file was last edited.*
