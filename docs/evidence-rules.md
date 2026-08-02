@@ -50,6 +50,16 @@ Before changing a winning framework, it must first be reproduced successfully. A
 
 An experiment's data collection begins at first delivery — the first impression, click, or spend against it — not at the moment its objects (campaign/ad set/ads) are created in Ads Manager. If an execution defect (an ad built the wrong way, a wrong targeting value, a missing setting) is found and fixed **before any delivery has occurred**, that correction restores the experiment to its originally approved design; it does not create a new experiment, does not require a new experiment ID, and does not need to be logged as a variable change. Only a change made **after delivery has begun** counts as an experimental modification requiring a new entry or a new experiment ID. This distinction was established on 2026-08-02 for EXP-003 ([`docs/experiments.md`](experiments.md)), where four ads were found using Media-Library-built creative instead of the required Existing Posts during the final pre-launch audit, corrected before the campaign had generated any impressions, clicks, spend, or purchases, and logged as a Pre-launch Execution Correction rather than a new experiment.
 
+## 10. Framework rules only apply to campaigns created after the framework version that introduced those rules.
+
+A campaign, ad set, or ad's real-world `created_time` (verified from Meta, never assumed) is what determines which version of this repository it can be judged against. A campaign built before a rule existed cannot have "violated" that rule — the rule wasn't there to follow. Such a campaign is **historical evidence**: a data point that may have helped produce a later rule, not a compliance failure against it. Judging a pre-existing campaign against a rule published after it is retrospective bias, and it is explicitly disallowed.
+
+**How to apply this in practice:**
+- Before comparing any campaign's settings against a "Confirmed" hypothesis or framework rule, check that campaign's real `created_time` against the `CHANGELOG.md` version/commit date that introduced the rule in question.
+- If the campaign predates the rule, do not describe its settings as a "deviation" or "violation." Describe them factually (Section A: objective observations — CTR, CPC, spend, funnel, etc.) and, separately, describe how they relate to the framework's later development (Section B: historical interpretation — e.g., "this campaign's manually-restricted placements later became HYP-002").
+- This does not exempt a pre-framework campaign from being read as evidence — [`docs/historical-analysis.md`](historical-analysis.md) exists specifically to capture pre-framework account history. It only exempts it from being scored as a compliance failure.
+- Established 2026-08-02: the Canton 3 Tunic campaign (EXP-002, ads created 2026-08-01T09:38 UTC per Meta) was audited against v1.3's Historical Pattern Discovery hypotheses (published 2026-08-01T22:06 UTC — roughly 12.5 hours after the campaign's ads were created). That audit incorrectly framed pre-framework settings as "deviations." Corrected and reclassified as **Historical Baseline** — see [`docs/experiments.md`](experiments.md) EXP-002.
+
 ---
 
 ## How this applies day to day

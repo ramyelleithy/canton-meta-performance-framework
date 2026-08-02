@@ -4,6 +4,18 @@ All notable changes to the Canton Meta Performance Framework are recorded here. 
 
 Per operating rule: **from v1.0 onward, any change to this framework must be justified by new data (a new audit, a new ad set result, a new Shopify pattern), not by opinion or intuition.** Every changelog entry should be traceable to evidence recorded in `docs/historical-analysis.md`.
 
+## v1.6 — New rule: no retrospective framework judgment; EXP-002 reclassified
+
+**Summary:** corrects a methodological error caught during a Canton 3 Tunic campaign audit (2026-08-02): the audit judged a pre-existing campaign's audience, placement, and creative choices as "deviations" from framework hypotheses that did not exist yet when the campaign was built. Verified directly against Meta: the Tunic ad set/ad were created 2026-08-01T09:38 UTC, roughly 12.5 hours before v1.3's Historical Pattern Discovery (the source of the hypotheses in question) was published at 2026-08-01T22:06 UTC. No existing framework decision, benchmark, winner, failure, or historical conclusion from v1.0–v1.5 was removed or overwritten.
+
+**Added:**
+- `docs/evidence-rules.md` — added Rule 10: **framework rules only apply to campaigns created after the framework version that introduced those rules.** A campaign's verified `created_time` must be checked against the rule's introduction date before its settings are judged as compliant or deviant; a pre-existing campaign is historical evidence, not a compliance failure.
+- `docs/experiments.md` — appended a reclassification note to EXP-002 (Tunic): reclassified as **Historical Baseline**, with the verified timestamps cited, per the new Rule 10. The experiment's original data (spend, purchases, ROAS, etc.) is untouched.
+
+**Not changed:** every v1.0–v1.5 framework decision, lifecycle stage, benchmark, winner, failure, and experiment entry remains exactly as originally documented. EXP-002's underlying data is unchanged — only its interpretation is corrected.
+
+---
+
 ## v1.5 — EXP-003 launched; new rule: pre-launch execution corrections
 
 **Summary:** logs the first real experiment entry against Evidence Rule 8 (EXP-003, Historical Replication, launched 2026-08-02) and adds a new procedural rule distinguishing pre-launch execution fixes from experimental modifications. No existing framework decision, benchmark, winner, failure, or historical conclusion from v1.0–v1.4 was removed or overwritten.
