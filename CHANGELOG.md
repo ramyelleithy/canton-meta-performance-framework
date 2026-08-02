@@ -4,6 +4,20 @@ All notable changes to the Canton Meta Performance Framework are recorded here. 
 
 Per operating rule: **from v1.0 onward, any change to this framework must be justified by new data (a new audit, a new ad set result, a new Shopify pattern), not by opinion or intuition.** Every changelog entry should be traceable to evidence recorded in `docs/historical-analysis.md`.
 
+## v1.4 — Evidence update: Website-only destination
+
+**Summary:** this release is a small, targeted evidence update, not a rewrite. It closes an open question prompted by a Page-level "Browser add-ons → WhatsApp" setting observed in Canton's Facebook Page settings (2026-08-02): whether historical winning campaigns drove to the website, WhatsApp, or both. No existing framework decision, lifecycle stage, benchmark, winner, failure, or historical conclusion from v1.0–v1.3 was removed or overwritten.
+
+**Updated:**
+- `docs/historical-analysis.md` — appended "Top recurring destination (added 2026-08-02)" under "Historical Pattern Discovery v1". Finding: **Website only**, confirmed by structural evidence (100% `OFFSITE_CONVERSIONS` optimization, 100% `1d_view_7d_click_1d_ev` attribution, and explicit "click the link" ad copy on the winning Benetton creatives), not by a direct `destination_type` field pull. Documents that `destination_type` and `url_tags` (UTM parameters) are not exposed by the connected Marketing API tool at all — a stronger form of Unknown than an empty field value.
+- `docs/hypotheses.md` — added HYP-011 (website-only destination is correct for Purchase-objective campaigns), Confirmed by structure, same caveat as above.
+
+**Not changed:** every v1.0–v1.3 framework decision, lifecycle stage, benchmark, winner, failure, and experiment entry remains exactly as originally documented. This update adds evidence; it does not touch the CBO/ABO conflict or any other open item.
+
+**Decision recorded:** new campaigns should set destination = Website only. Do not add a WhatsApp/Messenger destination or CTA to a Purchase-objective campaign without a new logged experiment, per Evidence Rules Rule 7.
+
+---
+
 ## v1.3 — Evidence update: Historical Pattern Discovery
 
 **Summary:** this release is an evidence update, not a rewrite. It incorporates the account-wide Historical Pattern Discovery pass (top 5 campaigns, top 5 ad sets, top 5 ads in Canton 1, compared variable by variable) into the repository. No existing framework decision, lifecycle stage, benchmark, winner, failure, or historical conclusion from v1.0–v1.2 was removed or overwritten — every addition below is either a new appended section or a new document.
